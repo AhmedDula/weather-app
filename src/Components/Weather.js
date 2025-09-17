@@ -336,6 +336,7 @@ export default function WeatherWithAutocompleteResponsive() {
                   <Box
                     key={i}
                     textAlign="center"
+                    maxHeight={90}
                     p={0.9}
                     sx={{
                       bgcolor: "rgba(255,255,255,0.05)",
@@ -343,17 +344,17 @@ export default function WeatherWithAutocompleteResponsive() {
 
                       width: "100%",
                       minWidth: {
-                        xs: "14%",
-                        sm: "16%",
-                        md: "17%",
-                        lg: "20%",
+                        xs: "13%",
+                        sm: "15%",
+                        md: "16%",
+                        lg: "18%",
                       },
                     }}
                   >
                     <Typography
                       sx={{
                         fontWeight: 400,
-                        fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.6rem" },
+                        fontSize: { xs: "0.8rem", sm: "1.2rem", md: "1.3rem" },
                       }}
                     >
                       {h.timeLabel}
@@ -361,7 +362,7 @@ export default function WeatherWithAutocompleteResponsive() {
                     <Typography
                       sx={{
                         fontWeight: 400,
-                        fontSize: { xs: "1rem", sm: "1.25rem", md: "1.7rem" },
+                        fontSize: { xs: "1rem", sm: "1.4rem", md: "1.4rem" },
                       }}
                     >
                       {h.temp}°C
@@ -370,7 +371,7 @@ export default function WeatherWithAutocompleteResponsive() {
                     <Typography
                       sx={{
                         fontWeight: 400,
-                        fontSize: { xs: "0.7rem", sm: "1rem", md: "1.4rem" },
+                        fontSize: { xs: "0.7rem", sm: "1rem", md: "1.1rem" },
                       }}
                     >
                       {h.main}
