@@ -1,6 +1,5 @@
-// WeatherWithAutocompleteResponsive.jsx
 
-import React, { useEffect, useMemo, useState, useRef } from "react";
+import  { useEffect, useMemo, useState, useRef } from "react";
 import {
   Box,
   Typography,
@@ -104,6 +103,7 @@ export default function WeatherWithAutocompleteResponsive() {
   async function fetchWeatherForCity(city) {
     if (!city) return;
     setSelectedCity(city);
+    setSearchInput('')
     setError(null);
 
     if (weatherController.current) weatherController.current.abort();
